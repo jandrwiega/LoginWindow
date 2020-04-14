@@ -9,6 +9,7 @@
 .wrapper
 {
     width: 100%;
+    min-height: 250px;
     height: 100vh;
     background-color: lightskyblue;
     display: flex;
@@ -18,7 +19,10 @@
 }
 .login__section--container
 {
-    width: 60%;
+    @media(max-width: 500px)
+    {
+        flex-basis: 90%;
+    }
     min-width: 200px;
     max-width: 500px;
     height: calc(60px + 160px + 40px);

@@ -8,6 +8,7 @@
 
 .wrapper {
   width: 100%;
+  min-height: 250px;
   height: 100vh;
   background-color: lightskyblue;
   display: -webkit-box;
@@ -23,7 +24,6 @@
 }
 
 .login__section--container {
-  width: 60%;
   min-width: 200px;
   max-width: 500px;
   height: calc(60px + 160px + 40px);
@@ -31,6 +31,13 @@
   -webkit-box-shadow: #222222 0px 1px 5px 2px;
           box-shadow: #222222 0px 1px 5px 2px;
   background-color: white;
+}
+
+@media (max-width: 500px) {
+  .login__section--container {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
 }
 
 .input__data--login {
